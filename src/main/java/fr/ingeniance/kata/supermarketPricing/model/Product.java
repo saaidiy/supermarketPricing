@@ -8,15 +8,17 @@ import java.math.BigDecimal;
 import fr.ingeniance.kata.supermarketPricing.utils.UnitEnum;
 
 /**
+ * Classe Produit
+ * 
  * @author SAAIDI
  *
  */
 public class Product {
-	
+
 	public String name;
-	
+
 	public BigDecimal quantity;
-		
+
 	private UnitEnum unit;
 
 	/**
@@ -32,6 +34,8 @@ public class Product {
 	}
 
 	/**
+	 * Retourne le nom du produit.
+	 * 
 	 * @return the name
 	 */
 	public String getName() {
@@ -39,6 +43,8 @@ public class Product {
 	}
 
 	/**
+	 * Met à jour le nom du produit.
+	 * 
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
@@ -46,6 +52,8 @@ public class Product {
 	}
 
 	/**
+	 * Retourne la quantité achetée
+	 * 
 	 * @return the quantity
 	 */
 	public BigDecimal getQuantity() {
@@ -53,6 +61,8 @@ public class Product {
 	}
 
 	/**
+	 * met à jour la quantité achetée
+	 * 
 	 * @param quantity the quantity to set
 	 */
 	public void setQuantity(BigDecimal quantity) {
@@ -60,6 +70,8 @@ public class Product {
 	}
 
 	/**
+	 * Retourne l'unité de mesure
+	 * 
 	 * @return the unit
 	 */
 	public UnitEnum getUnit() {
@@ -67,6 +79,8 @@ public class Product {
 	}
 
 	/**
+	 * Met à jour l'unité de mesure
+	 * 
 	 * @param unit the unit to set
 	 */
 	public void setUnit(UnitEnum unit) {

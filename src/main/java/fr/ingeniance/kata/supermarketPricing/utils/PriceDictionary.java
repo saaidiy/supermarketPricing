@@ -9,14 +9,15 @@ import java.util.TreeMap;
 import org.javatuples.Pair;
 
 /**
- * @author SAAIDI
+ * Base de données produits
  *
+ * @author SAAIDI
  */
 public class PriceDictionary {
-		
+
 	public static TreeMap<String, Pair<BigDecimal, UnitEnum>> priceMap = new TreeMap<String, Pair<BigDecimal, UnitEnum>>();
-	
-	static{
+
+	static {
 		priceMap.put("A", new Pair<BigDecimal, UnitEnum>(new BigDecimal("1.00"), UnitEnum.UNIT));
 		priceMap.put("B", new Pair<BigDecimal, UnitEnum>(new BigDecimal("1.00"), UnitEnum.UNIT));
 		priceMap.put("BB", new Pair<BigDecimal, UnitEnum>(new BigDecimal("1.00"), UnitEnum.UNIT));

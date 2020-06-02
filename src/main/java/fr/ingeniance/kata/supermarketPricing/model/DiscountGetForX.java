@@ -6,15 +6,16 @@ package fr.ingeniance.kata.supermarketPricing.model;
 import java.math.BigDecimal;
 
 /**
+ * Classe remise de type Achetez X pour le prix de Y
+ * 
  * @author SAAIDI
  *
  */
 public class DiscountGetForX extends Discount {
-	
+
 	private BigDecimal price;
-	
+
 	/**
-	 * @param type
 	 * @param quantity
 	 * @param price
 	 */
@@ -24,6 +25,8 @@ public class DiscountGetForX extends Discount {
 	}
 
 	/**
+	 * Retourne le prix après remise
+	 * 
 	 * @return the price
 	 */
 	public BigDecimal getPrice() {
@@ -31,12 +34,12 @@ public class DiscountGetForX extends Discount {
 	}
 
 	/**
+	 * Met à jour le prix après remise
+	 * 
 	 * @param price the price to set
 	 */
 	public void setPrice(BigDecimal price) {
 		this.price = price;
 	}
-	
-	
 
 }
