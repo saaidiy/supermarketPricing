@@ -25,7 +25,7 @@ public class SupermarketPricingTest {
 	 * Prix unitaire = 1
 	 */
 	@Test
-	public void productWithDiscount() throws IllegalUnitException {
+	public void productWithoutDiscount() throws IllegalUnitException {
 		Product product = new Product("A", new BigDecimal("5.0"), UnitEnum.UNIT);
 		BigDecimal totalPrice = SupermarketPricing.price.totalPrice(product);
 		Assert.assertEquals(new BigDecimal("5.000"), totalPrice);
